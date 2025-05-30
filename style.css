@@ -31,6 +31,17 @@ body {
   gap: 20px;
   margin-top: 30px;
 }
+/* Light mode */
+body.light-mode .card {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark mode */
+body.dark-mode .card {
+  background-color: #1f1f2e; /* or #2c2c3a for deep purple look */
+  color: #ffffff;
+}
 
 
 .card {
