@@ -32,7 +32,35 @@ body {
   gap: 20px;
   margin-top: 30px;
 }
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s, background 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+}
+.project-card h3 { margin-top: 0; color: var(--dark-accent); }
+.project-card a {
+  color: var(--dark-accent);
+  text-decoration: none;
+}
+body.light .project-card h3,
+body.light .project-card a {
+  color: var(--light-accent);
+}
 
+.centered {
+  text-align: center;
+  padding: 60px 20px;
+}
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
 .card {
   background-color: rgba(255,255,255,0.05);
   border-radius: 1rem;
