@@ -33,58 +33,6 @@ body {
   margin-top: 30px;
 }
 
-.skill-category {
-  background-color: var(--card-bg);
-  color: var(--text-color);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.skill-category h3 {
-  margin-bottom: 15px;
-  font-size: 1.3em;
-  border-bottom: 2px solid var(--text-color);
-  padding-bottom: 5px;
-}
-
-.skill-category ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.skill-category li {
-  margin-bottom: 8px;
-  font-size: 1em;
-}
-
-}
-/* LIGHT THEME */
-body.light {
-  --card-bg: #ffffff; /* white for light mode */
-  --text-color: #000000;
-  background-color: #ffffff;
-  color: var(--text-color);
-}
-
-/* DARK THEME */
-body.dark {
-  --card-bg: #2a153c; /* dark purple for dark mode */
-  --text-color: #ffffff;
-  background-color: #1a0d2e;
-  color: var(--text-color);
-}
-
-.project-card {
-  background-color: var(--card-bg);
-  color: var(--text-color);
-  padding: 20px;
-  border-radius: 12px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
 
 .card {
   background-color: rgba(255,255,255,0.05);
