@@ -27,6 +27,22 @@ body {
   border-radius: 50%;
   border: 5px solid #00ffff;
 }
+/* LIGHT THEME */
+body.light {
+  --card-bg: #ffffff; /* white for light mode */
+  --text-color: #000000;
+  background-color: #ffffff;
+  color: var(--text-color);
+}
+
+/* DARK THEME */
+body.dark {
+  --card-bg: #2a153c; /* dark purple for dark mode */
+  --text-color: #ffffff;
+  background-color: #1a0d2e;
+  color: var(--text-color);
+}
+
 .project-card {
   background-color: var(--card-bg);
   color: var(--text-color);
