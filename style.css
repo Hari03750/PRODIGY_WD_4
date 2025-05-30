@@ -27,7 +27,7 @@ body {
   border-radius: 50%;
   border: 5px solid #00ffff;
 }
-/* Grid Layout for Projects */
+/* Project Grid Layout */
 .custom-project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -39,8 +39,8 @@ body {
   background-color: var(--card-bg);
   padding: 24px;
   border-radius: 16px;
-  transition: transform 0.2s ease;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .project-card:hover {
@@ -57,7 +57,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* Buttons */
+/* Button Styles */
 .project-btn {
   display: inline-block;
   margin: 6px 5px 0 0;
@@ -80,7 +80,7 @@ body {
   background-color: var(--btn-hover-bg);
 }
 
-/* Theme Variables */
+/* Theme Variables - LIGHT MODE */
 body.light {
   --card-bg: #ffffff;
   --btn-bg: #6c63ff;
@@ -92,14 +92,15 @@ body.light {
   color: #000000;
 }
 
+/* Theme Variables - DARK MODE */
 body.dark {
-  --card-bg: #2c1e47;
+  --card-bg: #2a153c; /* Dark purple card background */
   --btn-bg: #a78bfa;
   --btn-color: #ffffff;
   --btn-hover-bg: #7c61d1;
   --btn-dark-bg: #121212;
   --btn-dark-color: #ffffff;
-  background-color: #1a0d2e;
+  background-color: #1a0d2e; /* Dark purple body */
   color: #ffffff;
 }
 
