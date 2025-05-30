@@ -1,0 +1,36 @@
+
+body {
+  transition: background 0.5s, color 0.5s;
+}
+.dark-theme {
+  background-color: #1a0f2e;
+  color: white;
+}
+.light-theme {
+  background-color: white;
+  color: black;
+}
+.navbar {
+  padding: 0.7rem 1rem;
+}
+.full-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 20px;
+}
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #00ffff;
+}
+.card {
+  background-color: rgba(255,255,255,0.05);
+  border-radius: 1rem;
+}
+.card-body {
+  padding: 1.2rem;
+}
