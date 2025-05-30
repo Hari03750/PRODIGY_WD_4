@@ -1,5 +1,10 @@
 
-document.getElementById('themeToggle').addEventListener('change', function () {
-  document.body.classList.toggle('light-theme');
-  document.body.classList.toggle('dark-theme');
-});
+
+<script>
+  const toggleBtn = document.getElementById("theme-toggle");
+
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme");
+    document.body.classList.toggle("light-theme");
+  });
+</script>
