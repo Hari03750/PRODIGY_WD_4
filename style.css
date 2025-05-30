@@ -1,32 +1,17 @@
-
-:root {
-  --bg-color: white;
-  --text-color: black;
-  --card-color: rgba(0, 0, 0, 0.05);
-}
-
-.dark-theme {
-  --bg-color: #1a0f2e;
-  --text-color: white;
-  --card-color: rgba(255, 255, 255, 0.05);
-}
-
-.light-theme {
-  --bg-color: white;
-  --text-color: black;
-  --card-color: rgba(0, 0, 0, 0.05);
-}
-
 body {
   transition: background 0.5s, color 0.5s;
-  background-color: var(--bg-color);
-  color: var(--text-color);
 }
-
+.dark-theme {
+  background-color: #1a0f2e;
+  color: white;
+}
+.light-theme {
+  background-color: white;
+  color: black;
+}
 .navbar {
   padding: 0.7rem 1rem;
 }
-
 .full-section {
   min-height: 100vh;
   display: flex;
@@ -34,29 +19,24 @@ body {
   justify-content: center;
   padding: 80px 20px;
 }
-
 .profile-img {
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid #00ffff;
-}
-
-.skills-grid {
+  .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
   margin-top: 30px;
 }
 
-.card {
-  background-color: var(--card-color);
-  border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: background-color 0.5s, color 0.5s;
-}
 
+.card {
+  background-color: rgba(255,255,255,0.05);
+  border-radius: 1rem;
+}
 .card-body {
   padding: 1.2rem;
 }
