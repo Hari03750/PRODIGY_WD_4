@@ -27,6 +27,82 @@ body {
   border-radius: 50%;
   border: 5px solid #00ffff;
 }
+/* Grid Layout for Projects */
+.custom-project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Project Card Styling */
+.project-card {
+  background-color: var(--card-bg);
+  padding: 24px;
+  border-radius: 16px;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.project-btn {
+  display: inline-block;
+  margin: 6px 5px 0 0;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-btn.dark {
+  background-color: var(--btn-dark-bg);
+  color: var(--btn-dark-color);
+}
+
+.project-btn:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+/* Theme Variables */
+body.light {
+  --card-bg: #ffffff;
+  --btn-bg: #6c63ff;
+  --btn-color: #ffffff;
+  --btn-hover-bg: #574fd6;
+  --btn-dark-bg: #111111;
+  --btn-dark-color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  --card-bg: #2c1e47;
+  --btn-bg: #a78bfa;
+  --btn-color: #ffffff;
+  --btn-hover-bg: #7c61d1;
+  --btn-dark-bg: #121212;
+  --btn-dark-color: #ffffff;
+  background-color: #1a0d2e;
+  color: #ffffff;
+}
+
 .card {
   background-color: rgba(255,255,255,0.05);
   border-radius: 1rem;
